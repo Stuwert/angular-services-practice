@@ -5,31 +5,13 @@
     <title></title>
   </head>
   <body>
-
-    <div ng-controller='CalcController'>
-
-      <select ng-model='funk'>
-        <option value="add" selected>Add</option>
-        <option value="subtract">Subtract</option>
-        <option value="multiply">Multiply</option>
-        <option value="divide">Divide</option>
-        <option value="power">Power</option>
-      </select>
-
-      <input type="number" name="name" value="" ng-model='one'>
-      <input type="number" name="name" value="" ng-model='two'>
-
-      <button type="button" name="button" ng-click='newCalculation()'>Do eet!</button>
-
-      <p>
-        Result: {{result}}
-      </p>
+    <div class="">
+      <a href="/#/tipcalc">Tip Calc</a>
+      <a href="/#/todolist">To Do List</a>
     </div>
-
-    <div ng-controller='ToDoController'>
-
-    </div>
-
+    <ng-show>
+      
+    </ng-show>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
     <script src="app.js" charset="utf-8"></script>
