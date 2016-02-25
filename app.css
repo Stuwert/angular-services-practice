@@ -1,0 +1,137 @@
+.mathify{
+  width: 350px;
+  height: 425px;
+  border-radius: 20px;
+  background-color: #A6DFDE;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  color: #8D6EC8;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  color: #88A6E5;
+}
+
+.mathify input{
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.mathify select {
+  font-size: 100px;
+}
+
+.mathify div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.mathify button{
+  width: 200px;
+  height: 60px;
+  font-size: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #E4F5E5;
+  background-color: #8D6EC8;
+}
+
+.mathify button:hover{
+  background-color: #E4F5E5;
+  color: #8D6EC8;
+  box-shadow: none;
+}
+
+.mathify p{
+  font-size: 20px;
+  color: #88A6E5;
+}
+
+.highlighted{
+  background-color: #8D6EC8;
+  color: white;
+}
+
+.todo{
+  width: 350px;
+  margin: 20px auto;
+}
+
+.todo h2{
+  text-align: center;
+}
+
+.todo-item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-item p{
+  width: 80%;
+  margin: 0;
+  font-size: 24px;
+}
+
+.todo-item input{
+  height: 24px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.todo-item button{
+  width: 15%;
+  margin: 0;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0;
+  border: none;
+  background-color: #35013F;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E9B5D2;
+}
+
+#addTask {
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+}
+
+#addTaskButton{
+  width: 60%;
+  font-size: 20px;
+  color: #35013F;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #35013F;
+  margin-left: 20%;
+}
+
+#addTaskButton:hover{
+  background-color: #35013F;
+  color: white;
+}

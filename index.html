@@ -2,12 +2,15 @@
 <html ng-app='serviceCalc'>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ToDo Calc</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
+  <body ng-controller='AllController'>
     <div class="">
-      <a href="/#/calc">Calculator</a>
-      <a href="/#/todo">To Do List</a>
+      <a href="/#/calc" ng-click='updateApp("calculator")' ng-class='isSelected("calculator")'>Calculator</a>
+      <a href="/#/todo" ng-click="updateApp('todo')" ng-class='isSelected("todo")'>To Do List</a>
     </div>
     <ng-view></ng-view>
 

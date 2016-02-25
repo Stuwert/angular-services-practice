@@ -1,0 +1,17 @@
+<div class="todo">
+
+  <h2>Keep Track of what you need to do</h2>
+
+  <div class="todo-item" ng-repeat='(key, item) in list'>
+    <p ng-click="toggle(key)" ng-show='!isToggled(key)' ng-click='toggle(key)'>
+      {{item.name}}
+    </p>
+    <input ng-show='isToggled(key)' ng-model='item.name' type="text" name="name">
+    <button ng-show='isToggled(key)' type="button" name="button" ng-click='update(key, item.name)'><i class="fa fa-floppy-o"></i></button>
+    <button type="button" name="button" ng-click='remove(key)'><i class="fa fa-ban"></i></button>
+  </div>
+
+  <input id='addTask' type="text" name="name" value="" ng-model='newItem' required/>
+  <button id='addTaskButton' type="button" name="button" ng-click=add(newItem)>+</button>
+
+</div>

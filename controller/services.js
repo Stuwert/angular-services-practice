@@ -1,7 +1,7 @@
 app.service('calculator', function(){
   var that = this;
   this.parser = function(name){
-    return that[name];
+    return name ? that[name] : that.noFunk;
   };
   this.add = function (one, two){
     return one + two;
@@ -9,7 +9,7 @@ app.service('calculator', function(){
   this.subtract = function (one, two){
     return one - two;
   }
-  this. multiply = function (one, two){
+  this.multiply = function (one, two){
     return one * two;
   }
   this.divide = function (one, two){
@@ -18,15 +18,46 @@ app.service('calculator', function(){
   this.power = function (one, two){
     return one ^ two;
   }
+  this.noFunk = function(){
+    return "Select a damn math"
+  }
 })
 
 
-app.service('todoCrud', function(){
-  this.create
+app.service('todo', function(){
+  this.itemCounter = 0;
+  this.list = {};
+  var that = this;
 
-  this.read
+  this.getList = function(){
+    return that.list;
+  };
 
-  this.update
+  this.setItem = function(newItem){
+    that.list[this.itemCounter] = {
+      'name' : newItem,
+      'toggled' : false
+    };
+    this.itemCounter++;
+  };
 
-  this.delete
+  this.removeItem = function(itemId){
+    delete that.list[itemId]
+  };
+
+  this.updateItem = function(itemId, newName){
+    that.list[itemId].name = newName;
+    that.list[itemId].toggled = !that.list[itemId].toggled;
+  };
+
+  this.toggle = function(itemId){
+    that.list[itemId].toggled = !that.list[itemId].toggled;
+  }
+
+  this.isToggled = function(itemId){
+    return this.list[itemId].toggled;
+  }
+
+
+
 })
