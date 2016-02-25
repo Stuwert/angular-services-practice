@@ -6,14 +6,16 @@
   </head>
   <body>
     <div class="">
-      <a href="/#/tipcalc">Tip Calc</a>
-      <a href="/#/todolist">To Do List</a>
+      <a href="/#/calc">Calculator</a>
+      <a href="/#/todo">To Do List</a>
     </div>
-    <ng-show>
-      
-    </ng-show>
+    <ng-view></ng-view>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
     <script src="app.js" charset="utf-8"></script>
+    <script src="controller/services.js" charset="utf-8"></script>
+    <script src="controller/calccontroller.js" charset="utf-8"></script>
+    <script src="controller/todocontroller.js" charset="utf-8"></script>
   </body>
 </html>
