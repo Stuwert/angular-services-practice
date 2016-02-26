@@ -16,7 +16,7 @@ app.service('calculator', function(){
     return one / two;
   }
   this.power = function (one, two){
-    return one ^ two;
+    return Math.pow(one, two);
   }
   this.noFunk = function(){
     return "Select a damn math"
